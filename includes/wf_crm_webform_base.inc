@@ -249,7 +249,7 @@ abstract class wf_crm_webform_base {
           $this->ent['contact'][$c]['id'] = $cid;
           return;
         }
-        if (wf_crm_contact_access($component, $filters, $cid) != FALSE) {
+        if (wf_crm_contact_access($component, $filters, $cid) != FALSE) { //ToDo KG - what if it returns nothing?
           $this->ent['contact'][$c]['id'] = $cid;
         }
       }
